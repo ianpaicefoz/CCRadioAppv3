@@ -40,7 +40,7 @@
 	</plugin>
 	<plugin name="cordova-plugin-insomnia" />
     <platform name="android">
-		<icon src="res/mipmap-mdpi/ic_launcher.png" density="hdpi" />
+		<icon src="res/mipmap-mdpi/ic_launcher.png" density="mdpi" />
 		<icon src="res/icon/android/ccradio_icon.png" />
 		<splash src="res/screen/android/black_bkg.jpg" />
     </platform>
