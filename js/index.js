@@ -31,6 +31,32 @@ var current_listeners_c1;
 var current_listeners_c2;
 var current_listeners_c3;
 
+var admobid = {}
+	if (/(android)/i.test(navigator.userAgent)) {  // for android & amazon-fireos
+	  admobid = {
+		banner: 'ca-app-pub-3940256099942544/6300978111'   
+		/*banner: 'ca-app-pub-3096329003114803/7523999379'   */
+
+	  }
+	}
+
+document.addEventListener('deviceready', function() {
+  admob.banner.config({
+	id: admobid.banner,
+	isTesting: true,
+	/*isTesting: false,*/
+	autoShow: true,
+  })
+  admob.banner.prepare()
+
+}, false)
+
+document.addEventListener('admob.banner.events.LOAD_FAIL', function(event) {
+  console.log(event)
+})
+
+
+
 $(document).ready( function() {
 	
 	setInterval(function(){ reloadInfoMusic(); }, 5000);

@@ -48,30 +48,6 @@
 		padding: 45px;
 	}
 	</style>	
-	<script type="text/javascript">
-		var admobid = {}
-			if (/(android)/i.test(navigator.userAgent)) {  // for android & amazon-fireos
-			  admobid = {
-				banner: 'ca-app-pub-3940256099942544/6300978111'   
-
-			  }
-			}
-
-			document.addEventListener('deviceready', function() {
-			  admob.banner.config({
-				id: admobid.banner,
-				isTesting: true,
-				autoShow: true,
-			  })
-			  admob.banner.prepare()
-
-			}, false)
-
-			document.addEventListener('admob.banner.events.LOAD_FAIL', function(event) {
-			  console.log(event)
-			})
-
-    </script>	
 </head>
 
 <body>
