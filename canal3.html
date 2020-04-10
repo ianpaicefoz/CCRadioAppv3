@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>CCRADIO APP</title>
+	<style>
+	body{
+		height:100%;
+		background-image:url(img/f3.jpg);
+		background-repeat:no-repeat;
+		background-size:cover;
+		/*filter: blur(4px);*/
+	}
+	</style>	
+</head>
+
+<body>
+    <input type="checkbox" id="abrir-cerrar" name="abrir-cerrar" value="">
+    <label for="abrir-cerrar">&#9776; <span class="abrir">Abrir</span><span class="cerrar">Cerrar</span>
+	</label>
+	
+    <div id="sidebar" class="sidebar">
+        <ul class="menu">
+			<!--<li><img style='width:80px' src='res\icon\android\ccradio_icon.png'></li>-->
+            <li><a href="canal1.html">Canal 1</a></li>
+            <li><a href="canal2.html">Canal 2</a></li>
+            <li><a href="canal3.html">Canal 3</a></li>
+            <li><a href="info.html">+Info</a></li>
+        </ul>
+    </div>
+    <div class="app">
+        <div id="deviceready" class="blink">
+			<input type="checkbox" id="fs"> <span style='font-size:10px;'>Evitar apagado pantalla</span>
+			<h3>CCRadio Canal 3</h3>
+			<p>Música para ambientes relajados.</p>		
+            <iframe src="https://radioserver02.ccradio.es/public/ccradio_canal_3/embed" frameborder="0" allowtransparency="true" style="width: 70%; min-height: 150px; border: 0;"></iframe>
+			<div id='oyentes_c3'></div>
+			<div id='playing_c3'></div>
+        </div>
+    </div>
+	<footer>
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- Barra horizontal Reproductor -->
+		<ins class="adsbygoogle"
+			 style="display:inline-block;width:320px;height:100px"
+			 data-ad-client="ca-pub-3096329003114803"
+			 data-ad-slot="6583868032"></ins>
+		<script>
+			 (adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</footer>	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>	
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        /*app.initialize();*/
+    </script>
+</body>
+
+</html>
