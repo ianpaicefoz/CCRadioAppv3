@@ -41,7 +41,7 @@
 	<plugin name="cordova-plugin-insomnia" />
     <platform name="android">
 		<icon src="res/icon/android/ccradio_icon.png" />
-		<splash src="res/screen/android/black_bkg.jpg" />
+		<splash src="res/screen/android/black_bkg.png" />
     </platform>
     <access origin="*" />
     <allow-intent href="http://*/*" />
