@@ -34,8 +34,8 @@ var current_listeners_c3;
 var admobid = {}
 	if (/(android)/i.test(navigator.userAgent)) {  // for android & amazon-fireos
 	  admobid = {
-		banner: 'ca-app-pub-3940256099942544/6300978111'   
-		/*banner: 'ca-app-pub-3096329003114803/7523999379'   */
+		/*banner: 'ca-app-pub-3940256099942544/6300978111'   */
+		banner: 'ca-app-pub-3096329003114803/7523999379'   
 
 	  }
 	}
@@ -43,8 +43,8 @@ var admobid = {}
 document.addEventListener('deviceready', function() {
   admob.banner.config({
 	id: admobid.banner,
-	isTesting: true,
-	/*isTesting: false,*/
+	/*isTesting: true,*/
+	isTesting: false,
 	autoShow: true,
   })
   admob.banner.prepare()
