@@ -36,7 +36,7 @@
     <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
 	<plugin name="cordova-plugin-admob-free" source="npm">
-		<variable name="ADMOB_APP_ID" value="ca-app-pub-3096329003114803/7523999379" /> 
+		<variable name="ADMOB_APP_ID" value="ca-app-pub-3940256099942544/6300978111" /> 
 	</plugin>
 	<plugin name="cordova-plugin-insomnia" />
     <platform name="android">

@@ -16,14 +16,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-//var bannerAdUnit = "ca-app-pub-3096329003114803/7523999379";
-var bannerAdUnit = "ca-app-pub-3940256099942544/6300978111";
-//var interstitialAdUnit = "ca-app-pub-4906074177432504/1649035673";
-var interstitialAdUnit = "ca-app-pub-3940256099942544/1033173712";
-
-var isOverlap = true; //true: overlap, false: split
-//var isTest = false;
-var isTest = true;
+//var ID_BANNER_ADMOB_REAL = "ca-app-pub-3096329003114803/7523999379";
+//var ID_BANNER_ADMOB_TEST = "ca-app-pub-3940256099942544/6300978111";
 
 var url_c1 = "https://radioserver02.ccradio.es/api/nowplaying/ccradio";
 var url_c2 = "https://radioserver02.ccradio.es/api/nowplaying/ccradio_canal_2";
@@ -36,40 +30,6 @@ var next_song_c3;
 var current_listeners_c1;
 var current_listeners_c2;
 var current_listeners_c3;
-
-document.addEventListener("deviceready", function(){
-	window.admob.setUp(bannerAdUnit, interstitialAdUnit, isOverlap, isTest);
-	//
-	window.admob.onBannerAdPreloaded = function() {
-		/*alert('onBannerAdPreloaded');*/
-	};
-	window.admob.onBannerAdLoaded = function() {
-		/*alert('onBannerAdLoaded');*/
-	};
-	window.admob.onBannerAdShown = function() {
-		/*alert('onBannerAdShown');*/
-	};
-	window.admob.onBannerAdHidden = function() {
-		/*alert('onBannerAdHidden');*/
-	};	
-	//
-	window.admob.onInterstitialAdPreloaded = function() {
-		alert('onInterstitialAdPreloaded');
-	};
-	window.admob.onInterstitialAdLoaded = function() {
-		alert('onInterstitialAdLoaded');
-	};
-	window.admob.onInterstitialAdShown = function() {
-		alert('onInterstitialAdShown');
-	};
-	window.admob.onInterstitialAdHidden = function() {
-		alert('onInterstitialAdHidden');
-	};
-	
-	window.admob.showBannerAd('bottom-center', 'SMART_BANNER');
-	
-}, false);
-
 
 $(document).ready( function() {
 	
