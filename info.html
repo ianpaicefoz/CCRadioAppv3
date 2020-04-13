@@ -39,7 +39,15 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>CCRADIO APP</title>	
+    <title>CCRADIO APP</title>
+	<style>
+	body{
+		/*filter: blur(4px);*/
+	}
+	#deviceready{
+		padding: 45px;
+	}
+	</style>	
 </head>
 
 <body>
@@ -58,10 +66,26 @@
     </div>
     <div class="app">
         <div id="deviceready" class="blink">
-            <!--<p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready</p>-->
+			<p><img style='width:150px;' src='img\logo.png'></p>
+            <p>CCRadio es una radio libre de pago por comunicación pública.</p>
+			<p>Úsala en tu tienda, en tu despacho o en tu local de hostelería con total libertad y seguridad.</p>
+			<p>Toda la música emitida está licenciada bajo Creative Commons.</p>
+			<p>Puedes poner en contacto con nosotros enviando un correo a <a href="mailto:info@ccradio.es">info@ccradio.es</a>
+			<p><img style='width:150px;' src='img\cc.logo.png'></p>
         </div>
     </div>
+	<footer>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- Barra horizontal Reproductor -->
+	<ins class="adsbygoogle"
+		 style="display:inline-block;width:320px;height:100px"
+		 data-ad-client="ca-pub-3096329003114803"
+		 data-ad-slot="6583868032"></ins>
+	<script>
+		 (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">

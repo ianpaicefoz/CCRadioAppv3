@@ -21,7 +21,7 @@
 
 var url_c1 = "https://radioserver02.ccradio.es/api/nowplaying/ccradio";
 var url_c2 = "https://radioserver02.ccradio.es/api/nowplaying/ccradio_canal_2";
-var url_c3 = "https://radioserver02.ccradio.es/api/nowplaying/ccradio_canal_2";
+var url_c3 = "https://radioserver02.ccradio.es/api/nowplaying/ccradio_canal_3";
 
 var next_song_c1;
 var next_song_c2;
